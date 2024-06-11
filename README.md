@@ -29,29 +29,29 @@
 ```SQL
 -- Creating tables for futher downloading data from excel
 CREATE TABLE orders(order_id  INT NOT NULL AUTO_INCREMENT,
-					order_date DATE,
+		    order_date DATE,
                     order_time TIME,
                     PRIMARY KEY(order_id));
                     
 CREATE TABLE order_details(order_details_id INT NOT NULL AUTO_INCREMENT,
-						   order_id INT,
+			   order_id INT,
                            quantity INT,
                            total_price DECIMAL(5,2),
                            PRIMARY KEY(order_details_id),
                            FOREIGN KEY(order_id) REFERENCES orders(order_id));
                            
 CREATE TABLE pizza_types(pizza_id VARCHAR(50),
-						 pizza_name VARCHAR(75),
+			 pizza_name VARCHAR(75),
                          pizza_category VARCHAR(25),
                          pizza_ingredients VARCHAR(200),
-						 PRIMARY KEY(pizza_id));
+			 PRIMARY KEY(pizza_id));
                        
 CREATE TABLE pizzas(pizza_details_id INT NOT NULL AUTO_INCREMENT,
-					pizza_id VARCHAR(50),
-					pizza_size ENUM('XXL', 'XL', 'L', 'M', 'S'),
-					unit_price DECIMAL(4,2),
-					PRIMARY KEY(pizza_details_id),
-					FOREIGN KEY(pizza_id) REFERENCES pizza_types(pizza_id),
+                    pizza_id VARCHAR(50),
+		    pizza_size ENUM('XXL', 'XL', 'L', 'M', 'S'),
+  		    unit_price DECIMAL(4,2),
+		    PRIMARY KEY(pizza_details_id),
+		    FOREIGN KEY(pizza_id) REFERENCES pizza_types(pizza_id),
                     FOREIGN KEY(pizza_details_id) REFERENCES order_details(order_details_id));   
 ```
 
