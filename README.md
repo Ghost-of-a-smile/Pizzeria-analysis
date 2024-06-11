@@ -8,7 +8,7 @@
 
 На данной [площадке](https://www.mavenanalytics.io/data-playground) выкладывается множество датасетов, в том числе [этот](https://www.mavenanalytics.io/blog/maven-pizza-challenge). По ссылке можно ознакомиться с более подробным описанием требуемого проекта, однако если кратко:
 
-Имеется Excel файл *["Data Model - Pizza Sales"](https://docs.google.com/spreadsheets/d/1rueHQ3gU4kQCybTGwHb0xxczX73DJUFu/edit?usp=sharing&ouid=104109469884925505076&rtpof=true&sd=true)*, с помощью которого необходимо ответь на следующие бизнес-вопросы:
+Имеется Excel файл *["Data Model - Pizza Sales"](https://docs.google.com/spreadsheets/d/1rueHQ3gU4kQCybTGwHb0xxczX73DJUFu/edit?usp=sharing&ouid=104109469884925505076&rtpof=true&sd=true)*, с помощью которого необходимо ответить на следующие бизнес-вопросы:
 
         1. В какие дни и время мы чаще всего заняты?
         2. Сколько пицц мы готовим в периоды пиковой нагрузки?
